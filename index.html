@@ -4,14 +4,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rinterio</title>
     <!-- DaysiUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- manrope font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <style>
+        .manrope-font {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="manrope-font">
+    <header>
+        <!-- nav bar start -->
+        <nav class="flex justify-around items-center my-12">
+            <div>
+                <a class="btn btn-ghost text-3xl ont-bold"><i
+                        class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-2 -rotate-45 text-xl"></i>Rinterio</a>
+            </div>
+            <div class="sm:block hidden">
+                <ul class="flex space-x-8">
+                    <li class="hover:text-black text-[#737373] hover:font-medium font-medium"><a>Home</a></li>
+                    <li class="hover:text-black text-[#737373] hover:font-medium font-medium"><a>Services</a></li>
+                    <li class="hover:text-black text-[#737373] hover:font-medium font-medium"><a>Portfolio</a></li>
+                    <li class="hover:text-black text-[#737373] hover:font-medium font-medium"><a>Blogs</a></li>
+                    <li class="hover:text-black text-[#737373] hover:font-medium font-medium"><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="sm:block hidden">
+                <a class=" mx-2 p-2 rounded-full bg-[#E9E9E9]" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class=" mx-2 p-2 rounded-full bg-[#E9E9E9]" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a class="btn rounded-full bg-[#ABEF5F] text-black font-bold text-xl ">Book Consult <i
+                        class="fa-solid fa-arrow-right bg-black rounded-full p-1 -rotate-45 text-xl text-white mx-1"></i></a>
+            </div>
+            <div class=" sm:hidden">
+                <details class="dropdown">
+                    <summary class="btn m-1"><i class="fa-solid fa-bars"></i></summary>
+                    <ul class="menu dropdown-content bg-base-100 rounded-box z-[1] -w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </details>
+            </div>
+        </nav>
+        <!-- banner section start here -->
+        <section class=" ">
+            <div class="">
+                <div>
+                    <img src="assets/banner.png" alt="">
 
+                    <h1>A barn house of this design has a striking appearance</h1>
+
+                    <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                        weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                    </p>
+
+                    <button class="btn bg-[#D4F6AE] rounded-full">View Details <i
+                            class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-2 -rotate-45 text-xl"></i></button>
+                </div>
+
+            </div>
+        </section>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <nav class="w-9/12 mx-auto ">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-3xl ont-bold">Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end ">
+                <a class="p-2  rounded-full" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="p-2 bg-white rounded-full" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a class="btn">Book Consult</a>
+            </div>
+        </div>
+    </nav> -->
 </body>
 
 </html>
