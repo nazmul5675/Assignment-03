@@ -24,28 +24,39 @@
     </style>
 </head>
 
-<body class="manrope-font">
+<body class="manrope-font ">
+    <!-- header section start here -->
     <header class="w-9/12 mx-auto">
         <!-- nav bar start -->
         <nav class="flex justify-between items-center my-12">
             <div>
                 <a class="btn btn-ghost text-3xl font-extrabold"><i
-                        class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-2 -rotate-45 text-xl"></i>Rinterio</a>
+                        class="fa-solid fa-circle-arrow-right text-lime-400 -rotate-45"></i>Rinterio</a>
             </div>
             <div class="sm:block hidden">
                 <ul class="flex space-x-8">
-                    <li class="hover:text-black text-[#737373] hover:font-medium font-medium"><a>Home</a></li>
-                    <li class="hover:text-black text-[#737373] hover:font-medium font-medium"><a>Services</a></li>
-                    <li class="hover:text-black text-[#737373] hover:font-medium font-medium"><a>Portfolio</a></li>
-                    <li class="hover:text-black text-[#737373] hover:font-medium font-medium"><a>Blogs</a></li>
-                    <li class="hover:text-black text-[#737373] hover:font-medium font-medium"><a>Contact Us</a></li>
+                    <li class="cursor-pointer hover:text-black text-[#737373] hover:font-medium font-medium"><a>Home</a>
+                    </li>
+                    <li class="cursor-pointer hover:text-black text-[#737373] hover:font-medium font-medium">
+                        <a>Services</a>
+                    </li>
+                    <li class="cursor-pointer hover:text-black text-[#737373] hover:font-medium font-medium">
+                        <a>Portfolio</a>
+                    </li>
+                    <li class="cursor-pointer hover:text-black text-[#737373] hover:font-medium font-medium">
+                        <a>Blogs</a>
+                    </li>
+                    <li class="cursor-pointer hover:text-black text-[#737373] hover:font-medium font-medium"><a>Contact
+                            Us</a></li>
                 </ul>
             </div>
             <div class="sm:block hidden">
-                <a class=" mx-2 p-2 rounded-full bg-[#E9E9E9]" href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                <a class=" mx-2 p-2 rounded-full bg-[#E9E9E9]" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a class="mx-4 p-3 rounded-full bg-stone-300" href=""><i
+                        class="fa-solid fa-cart-shopping text-xl"></i></a>
+                <a class="mx-4 p-3 rounded-full bg-stone-300" href=""><i
+                        class="fa-solid fa-magnifying-glass text-xl"></i></a>
                 <a class="btn rounded-full bg-[#ABEF5F] text-black font-bold text-xl ">Book Consult <i
-                        class="fa-solid fa-arrow-right bg-black rounded-full p-1 -rotate-45 text-xl text-white mx-1"></i></a>
+                        class="fa-solid fa-circle-arrow-right  rounded-full p-1 -rotate-45 text-xl text-black mx-1"></i></a>
             </div>
             <div class=" sm:hidden">
                 <details class="dropdown">
@@ -77,12 +88,59 @@
                     </p>
                     <div class="card-actions">
                         <button class="btn btn bg-[#D4F6AE] rounded-full w-full px-10 font-bold text-xl">View Details <i
-                                class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-1 -rotate-45 text-xl ml-3"></i></button>
+                                class="fa-solid fa-circle-arrow-right text-lime-500 -rotate-45 "></i></button>
                     </div>
                 </div>
             </div>
         </section>
     </header>
+
+    <!-- main section start -->
+    <main class="bg-[#F4F4F4] my-24 sm:p-20 py-10">
+        <!-- about section start  -->
+        <section class="w-9/12 mx-auto ">
+            <img class="hidden sm:block" src="assets/Vector.png" alt=""><br>
+            <div class=" grid sm:grid-cols-2 grid-col-1 gap-10 sm:mx-16">
+                <div>
+                    <div class="space-y-8 sm:text-left text-center">
+                        <button class="btn bg-white rounded-full px-10"><i class="fa-solid  fa-arrow-right"></i>About
+                            Us</button>
+                        <h3 class="text-4xl font-extrabold text-[#212121]">We design thoughtful, liveable spaces</h3>
+                        <p class="text-[#494949] font-medium ">The barn house captivates with its blend of rustic
+                            charm
+                            and
+                            modern
+                            sophistication, featuring
+                            weathered wood, sleek metal accents, and large windows that flood the space with natural
+                            light.
+                        </p>
+                    </div>
+                    <div class=" bg-white rounded-xl flex items-center p-4 my-6">
+                        <div><img src="assets/commercial.png" alt=""></div>
+                        <div class="space-y-1 pl-3">
+                            <h3 class="text-xl font-bold">Commercial</h3>
+                            <p class="text-[#494949] font-medium">The barn house captivates with its blend <br>of rustic
+
+                                charm and modern.</p>
+                        </div>
+                    </div>
+                    <div class=" bg-white rounded-xl flex items-center p-4 my-6">
+                        <div><img src="assets/residential.png" alt=""></div>
+                        <div class="space-y-1 pl-3">
+                            <h3 class="text-xl font-bold">Residential</h3>
+                            <p class="text-[#494949] font-medium">The barn house captivates with its blend <br>of rustic
+
+                                charm and modern.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="w-full">
+                    <img src="assets/Rectangle.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
 
 
 
